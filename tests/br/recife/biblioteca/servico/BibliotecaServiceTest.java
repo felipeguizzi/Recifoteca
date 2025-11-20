@@ -21,18 +21,18 @@ public class BibliotecaServiceTest {
 
     @Test
     void testCriarEListarUsuario() {
-        Usuario aluno = service.criarUsuario("João Silva", "joao@example.com", "aluno");
+        Usuario aluno = service.criarUsuario("Carlinhos", "carlos@example.com", "aluno");
         assertNotNull(aluno);
-        assertEquals("João Silva", aluno.getNome());
-        assertEquals("joao@example.com", aluno.getEmail());
+        assertEquals("Carlinhos", aluno.getNome());
+        assertEquals("carlos@example.com", aluno.getEmail());
         assertTrue(service.listarUsuarios().contains(aluno));
     }
 
     @Test
     void testNaoPodeCriarUsuarioComEmailDuplicado() {
-        service.criarUsuario("Maria Souza", "maria@example.com", "servidor");
+        service.criarUsuario("Luana Silva", "luana@example.com", "servidor");
         assertThrows(IllegalArgumentException.class, () -> {
-            service.criarUsuario("Maria Nova", "maria@example.com", "aluno");
+            service.criarUsuario("Rebeca Pereira", "rebeca@example.com", "aluno");
         });
     }
 
