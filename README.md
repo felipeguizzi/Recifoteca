@@ -144,7 +144,9 @@ Após iniciar a aplicação com `./rlibre.sh`, você pode testar o sistema segui
    * Listando os recursos, a descrição do livro deve mostrar também seus capítulos.
 
 ---
+Para compilar:  javac Recifoteca.java 
+Para rodar: java Main
 
-Se quiser, posso **melhorar**, **reduzir**, **formalizar**, ou **transformar em PDF** esse texto. Basta pedir!
+
 
 
